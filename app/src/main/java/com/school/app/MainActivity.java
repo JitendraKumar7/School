@@ -2,8 +2,19 @@ package com.school.app;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 
-public class MainActivity extends AppCompatActivity {
+import com.school.app.base.BaseActivity;
+
+public class MainActivity extends BaseActivity {
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
