@@ -20,14 +20,8 @@
     <TextView
         style="@style/TextAppearance"
         android:layout_margin="0dp"
-        android:text="In the last year or so, Android development has really come of age. Android Studio with Gradle at its core is a dash of light after Eclipse. Besides that, there are quite a few open source libraries that we use on a daily basis.
-
-Here is a selection of five of our favorite ones and a list of links where you can find others.
-
-In the last year or so, Android development has really come of age. Android Studio with Gradle at its core is a dash of light after Eclipse. Besides that, there are quite a few open source libraries that we use on a daily basis.
-
-Here is a selection of five of our favorite ones and a list of links where you can find others.
-
-" />
+        android:text="@string/in_the_las"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
