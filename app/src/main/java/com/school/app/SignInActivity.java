@@ -28,6 +28,7 @@ public class SignInActivity extends BaseActivity {
     @BindView(R.id.txtPassword)
     EditText tvPassword;
 
+    int email = 0;
     boolean type = false;
 
     @OnClick({R.id.btnSignIn,
@@ -40,7 +41,34 @@ public class SignInActivity extends BaseActivity {
                     String email = tvEmailId.getText().toString();
                     String password = tvPassword.getText().toString();
                     if (email.length() > 0 && password.length() > 0) {
-                        launchIntent(DashboardActivity.class, true);
+                        switch (this.email) {
+                            case 0:
+                                if (email.equals("PankajAdmin@gmail.com") &&
+                                        password.equals("Pankaj@123"))
+                                    launchIntent(DashboardActivity.class, true);
+                                break;
+
+                            case 1:
+                                if (email.equals("PankajTeacher@gmail.com") &&
+                                        password.equals("Pankaj@123"))
+                                    launchIntent(DashboardActivity.class, true);
+                                break;
+
+                            case 2:
+                                if (email.equals("PankajParent@gmail.com") &&
+                                        password.equals("Pankaj@123"))
+                                    launchIntent(DashboardActivity.class, true);
+                                break;
+
+
+                            case 3:
+                                if (email.equals("PankajStudent@gmail.com") &&
+                                        password.equals("Pankaj@123"))
+                                    launchIntent(DashboardActivity.class, true);
+                                break;
+                            default:
+                                break;
+                        }
                     } else {
                         tvEmailId.setError("Required");
                         tvPassword.setError("Required");
@@ -83,12 +111,19 @@ public class SignInActivity extends BaseActivity {
         CharSequence val = item.getTitle();
         switch (item.getItemId()) {
             case R.id.nav_admin:
+                email = 0;
                 break;
             case R.id.nav_teacher:
+                email = 1;
                 break;
             case R.id.nav_parent:
+                email = 2;
                 break;
             case R.id.nav_student:
+                email = 3;
+                break;
+            default:
+                email = 4;
                 break;
         }
         type = true;
