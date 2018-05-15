@@ -8,37 +8,37 @@
         <item
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_nav_about"
-            android:title="@string/lable_about_us" />
+            android:title="@string/label_about_us" />
 
         <item
             android:id="@+id/nav_student"
             android:icon="@drawable/ic_nav_student"
-            android:title="@string/lable_students_detail" />
+            android:title="@string/label_students_detail" />
 
         <item
             android:id="@+id/nav_location"
             android:icon="@drawable/ic_nav_location"
-            android:title="@string/lable_our_location" />
+            android:title="@string/label_our_location" />
 
         <item
             android:id="@+id/nav_board"
             android:icon="@drawable/ic_nav_board"
-            android:title="@string/lable_notice_board" />
+            android:title="@string/label_notice_board" />
 
         <item
             android:id="@+id/nav_message"
             android:icon="@drawable/ic_nav_message"
-            android:title="@string/lable_principle_message" />
+            android:title="@string/label_principle_message" />
 
         <item
             android:id="@+id/nav_gallary"
             android:icon="@drawable/ic_nav_photo_library"
-            android:title="@string/lable_photos_gallery" />
+            android:title="@string/label_photos_gallery" />
 
         <item
             android:id="@+id/nav_account"
             android:icon="@drawable/ic_nav_account_balance"
-            android:title="@string/lable_account_sections" />
+            android:title="@string/label_account_sections" />
     </group>
 
     <item android:title="@string/nav_communicate">

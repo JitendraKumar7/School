@@ -41,19 +41,19 @@
             android:label="@string/title_activity_forgot_password" />
         <activity
             android:name=".nav.AboutActivity"
-            android:label="@string/lable_about_us" />
+            android:label="@string/label_about_us" />
         <activity
             android:name=".nav.AccountSectionsActivity"
-            android:label="@string/lable_account_sections" />
+            android:label="@string/label_account_sections" />
         <activity
             android:name=".nav.NoticeBoardActivity"
-            android:label="@string/lable_notice_board" />
+            android:label="@string/label_notice_board" />
         <activity
             android:name=".nav.PhotosGallaryActivity"
-            android:label="@string/lable_photos_gallery" />
+            android:label="@string/label_photos_gallery" />
         <activity
             android:name=".nav.PrincipleMessageActivity"
-            android:label="@string/lable_principle_message" />
+            android:label="@string/label_principle_message" />
         <activity
             android:name=".nav.StudentsActivity"
             android:label="Student" />
@@ -71,9 +71,9 @@
 
         <activity
             android:name=".nav.MapsActivity"
-            android:label="@string/lable_our_location"/>
+            android:label="@string/label_our_location"/>
         <activity android:name=".nav.StudentDetailActivity"
-            android:label="@string/lable_students_detail"/>
+            android:label="@string/label_students_detail"/>
     </application>
 
 </manifest>
