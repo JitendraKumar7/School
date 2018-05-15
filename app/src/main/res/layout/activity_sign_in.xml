@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".SignInActivity">
 
     <include layout="@layout/toolbar" />
 
@@ -30,14 +30,14 @@
         style="@style/TextAppearance.Edit"
         android:hint="Email-Id"
         android:inputType="textEmailAddress"
-        android:paddingLeft="0dp" />
+        />
 
     <EditText
         android:id="@+id/txtPassword"
         style="@style/TextAppearance.Edit"
         android:hint="Password"
         android:inputType="textPassword"
-        android:paddingLeft="0dp" />
+        />
 
     <TextView
         android:id="@+id/btnSignIn"
@@ -59,7 +59,7 @@
             android:layout_margin="0dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="New User? Sign-Up" />
+            android:text="New User? Sign Up" />
 
         <TextView
             android:id="@+id/btnPassword"

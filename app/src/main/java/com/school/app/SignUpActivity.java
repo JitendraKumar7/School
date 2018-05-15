@@ -1,6 +1,7 @@
 package com.school.app;
 
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
 
@@ -12,6 +13,9 @@ import butterknife.OnClick;
 
 public class SignUpActivity extends BaseActivity {
 
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
+
     @BindView(R.id.txtEmailId)
     EditText tvEmailId;
 
@@ -22,11 +26,13 @@ public class SignUpActivity extends BaseActivity {
     EditText tvConfirm;
 
     @OnClick({R.id.btnSignIn,
-            R.id.btnSignUp,
-            R.id.btnPassword})
+            R.id.btnSignUp})
     void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnSignIn:
+                launchIntent(SignInActivity.class, true);
+                break;
+            case R.id.btnSignUp:
                 String email = tvEmailId.getText().toString();
                 String password = tvPassword.getText().toString();
                 String confirm = tvConfirm.getText().toString();
@@ -38,12 +44,8 @@ public class SignUpActivity extends BaseActivity {
                     tvEmailId.setError("Required");
                     tvPassword.setError("Required");
                 }
+                break;
 
-                break;
-            case R.id.btnSignUp:
-                break;
-            case R.id.btnPassword:
-                break;
             default:
                 break;
         }
@@ -54,5 +56,6 @@ public class SignUpActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         ButterKnife.bind(this);
+        setSupportActionBar(toolbar);
     }
 }

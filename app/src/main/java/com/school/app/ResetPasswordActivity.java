@@ -11,26 +11,41 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ForgotPasswordActivity extends BaseActivity {
+public class ResetPasswordActivity extends BaseActivity {
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
-    @BindView(R.id.txtEmailId)
+    @BindView(R.id.txtOTP)
     EditText tvEmailId;
 
-    @OnClick({R.id.btnResetPassword})
+    @BindView(R.id.txtPassword)
+    EditText tvPassword;
+
+    @BindView(R.id.txtConfirm)
+    EditText tvConfirm;
+
+    @OnClick({R.id.btnResendOTP,
+            R.id.btnResetPassword})
     void onClick(View v) {
         switch (v.getId()) {
+            case R.id.btnResendOTP:
+                showToast("OTP Send Successfully!");
+                break;
             case R.id.btnResetPassword:
                 String email = tvEmailId.getText().toString();
-                if (email.length() > 0) {
-                    showToast("OTP Send Successfully!");
-                    launchIntent(ResetPasswordActivity.class, true);
+                String password = tvPassword.getText().toString();
+                String confirm = tvConfirm.getText().toString();
+                if (email.length() > 0 && password.length() > 0) {
+                    if (password.equals(confirm))
+                        launchIntent(SignInActivity.class, true);
+                    else tvConfirm.setError("Password Doesn't Match");
                 } else {
                     tvEmailId.setError("Required");
+                    tvPassword.setError("Required");
                 }
                 break;
+
             default:
                 break;
         }
@@ -39,9 +54,8 @@ public class ForgotPasswordActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forgot_password);
+        setContentView(R.layout.activity_reset_password);
         ButterKnife.bind(this);
         setSupportActionBar(toolbar);
     }
-
 }

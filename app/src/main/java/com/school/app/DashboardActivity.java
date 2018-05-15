@@ -1,25 +1,32 @@
 package com.school.app;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 
-import butterknife.BindView;
+import com.school.app.base.BaseActivity;
+import com.school.app.nav.AboutActivity;
+import com.school.app.nav.AccountSectionsActivity;
+import com.school.app.nav.MapsActivity;
+import com.school.app.nav.NoticeBoardActivity;
+import com.school.app.nav.PhotosGallaryActivity;
+import com.school.app.nav.PrincipleMessageActivity;
+import com.school.app.nav.StudentsActivity;
+import com.school.app.utility.Helper;
 
-public class DashboardActivity extends AppCompatActivity
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+public class DashboardActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
+
     @BindView(R.id.drawer_layout)
     DrawerLayout drawer;
 
@@ -33,49 +40,19 @@ public class DashboardActivity extends AppCompatActivity
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.dashboard, menu);
-        return true;
-    }
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+        ButterKnife.bind(this);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,
+                drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -84,20 +61,58 @@ public class DashboardActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        switch (id) {
 
-        } else if (id == R.id.nav_slideshow) {
+            case R.id.nav_about:
+                launchIntent(AboutActivity.class, false);
+                break;
 
-        } else if (id == R.id.nav_manage) {
+            case R.id.nav_student:
+                launchIntent(StudentsActivity.class, false);
+                break;
 
-        } else if (id == R.id.nav_share) {
+            case R.id.nav_location:
+                launchIntent(MapsActivity.class, false);
+                break;
 
-        } else if (id == R.id.nav_send) {
+            case R.id.nav_board:
+                launchIntent(NoticeBoardActivity.class, false);
+                break;
+
+            case R.id.nav_message:
+                launchIntent(PrincipleMessageActivity.class, false);
+                break;
+
+            case R.id.nav_gallary:
+                launchIntent(PhotosGallaryActivity.class, false);
+                break;
+
+            case R.id.nav_account:
+                launchIntent(AccountSectionsActivity.class, false);
+                break;
+
+            case R.id.nav_rate:
+                Helper.rateApp(activity);
+                break;
+
+            case R.id.nav_support:
+                showToast("Coming Soon...");
+                break;
+
+            case R.id.nav_feedback:
+                Helper.feedbackApp(activity);
+                break;
+
+            case R.id.nav_share:
+                Helper.shareApp(activity);
+                break;
+
+            case R.id.nav_logout:
+                launchIntent(SignInActivity.class, true);
+                break;
+
 
         }
-
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
