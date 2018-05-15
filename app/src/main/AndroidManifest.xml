@@ -17,8 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SignInActivity"
-            android:label="@string/title_activity_sign_in">
+            android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,6 +27,9 @@
         <activity
             android:name=".DashboardActivity"
             android:label="@string/title_activity_dashboard" />
+        <activity
+            android:name=".SignInActivity"
+            android:label="@string/title_activity_sign_in"/>
         <activity
             android:name=".SignUpActivity"
             android:label="@string/title_activity_sign_up" />
