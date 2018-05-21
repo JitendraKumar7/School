@@ -11,19 +11,9 @@
             android:title="@string/label_about_us" />
 
         <item
-            android:id="@+id/nav_student"
-            android:icon="@drawable/ic_nav_student"
-            android:title="@string/label_students_detail" />
-
-        <item
             android:id="@+id/nav_location"
             android:icon="@drawable/ic_nav_location"
             android:title="@string/label_our_location" />
-
-        <item
-            android:id="@+id/nav_board"
-            android:icon="@drawable/ic_nav_board"
-            android:title="@string/label_notice_board" />
 
         <item
             android:id="@+id/nav_message"
@@ -36,42 +26,27 @@
             android:title="@string/label_photos_gallery" />
 
         <item
-            android:id="@+id/nav_account"
-            android:icon="@drawable/ic_nav_account_balance"
-            android:title="@string/label_account_sections" />
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/ic_menu_rate_review"
+            android:title="@string/nav_rate_us" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/nav_share_app" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_menu_contact"
+            android:title="@string/nav_contact" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="@string/nav_logout" />
+
     </group>
 
-    <item android:title="@string/nav_communicate">
-
-        <menu>
-
-            <item
-                android:id="@+id/nav_rate"
-                android:icon="@drawable/ic_menu_rate_review"
-                android:title="@string/nav_rate_us" />
-
-            <item
-                android:id="@+id/nav_support"
-                android:icon="@drawable/ic_menu_support"
-                android:title="@string/nav_support" />
-
-            <item
-                android:id="@+id/nav_feedback"
-                android:icon="@drawable/ic_menu_feedback"
-                android:title="@string/nav_feedback" />
-
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/nav_share_app" />
-
-            <item
-                android:id="@+id/nav_logout"
-                android:icon="@drawable/ic_menu_logout"
-                android:title="@string/nav_logout" />
-
-        </menu>
-
-    </item>
-
 </menu>
+
+

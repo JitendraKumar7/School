@@ -67,16 +67,8 @@ public class DashboardActivity extends BaseActivity
                 launchIntent(AboutActivity.class, false);
                 break;
 
-            case R.id.nav_student:
-                launchIntent(StudentsActivity.class, false);
-                break;
-
             case R.id.nav_location:
                 launchIntent(MapsActivity.class, false);
-                break;
-
-            case R.id.nav_board:
-                launchIntent(NoticeBoardActivity.class, false);
                 break;
 
             case R.id.nav_message:
@@ -87,20 +79,12 @@ public class DashboardActivity extends BaseActivity
                 launchIntent(PhotosGallaryActivity.class, false);
                 break;
 
-            case R.id.nav_account:
-                launchIntent(AccountSectionsActivity.class, false);
-                break;
-
             case R.id.nav_rate:
                 Helper.rateApp(activity);
                 break;
 
-            case R.id.nav_support:
+            case R.id.nav_contact:
                 showToast("Coming Soon...");
-                break;
-
-            case R.id.nav_feedback:
-                Helper.feedbackApp(activity);
                 break;
 
             case R.id.nav_share:
