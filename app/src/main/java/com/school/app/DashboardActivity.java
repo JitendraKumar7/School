@@ -10,12 +10,9 @@ import android.view.MenuItem;
 
 import com.school.app.base.BaseActivity;
 import com.school.app.nav.AboutActivity;
-import com.school.app.nav.AccountSectionsActivity;
 import com.school.app.nav.MapsActivity;
-import com.school.app.nav.NoticeBoardActivity;
 import com.school.app.nav.PhotosGallaryActivity;
 import com.school.app.nav.PrincipleMessageActivity;
-import com.school.app.nav.StudentsActivity;
 import com.school.app.utility.Helper;
 
 import butterknife.BindView;

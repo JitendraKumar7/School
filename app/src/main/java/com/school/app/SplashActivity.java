@@ -12,7 +12,6 @@ public class SplashActivity extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        butterknife.ButterKnife.bind(this);
 
         handler.postDelayed(new Runnable() {
             @Override

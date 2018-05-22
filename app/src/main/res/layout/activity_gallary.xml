@@ -61,7 +61,7 @@
             android:layout_height="@dimen/_120sdp"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:src="@drawable/games_1" />
+            android:src="@drawable/fun_games_3" />
 
 
         <ImageView
@@ -69,7 +69,7 @@
             android:layout_height="@dimen/_120sdp"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:src="@drawable/games_7" />
+            android:src="@drawable/fun_games_2" />
 
 
     </LinearLayout>

@@ -10,17 +10,21 @@
     <include layout="@layout/toolbar" />
 
     <ImageView
-        android:layout_width="@dimen/_120sdp"
-        android:layout_height="@dimen/_120sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/_25sdp"
         android:contentDescription="@string/app_name"
         android:scaleType="fitXY"
-        android:src="@drawable/ic_launcher_web" />
+        android:src="@drawable/welcome" />
 
     <TextView
         style="@style/TextAppearance"
+        android:layout_margin="0dp"
         android:text="In the last year or so, Android development has really come of age. Android Studio with Gradle at its core is a dash of light after Eclipse. Besides that, there are quite a few open source libraries that we use on a daily basis.
+
+Here is a selection of five of our favorite ones and a list of links where you can find others.
+
+In the last year or so, Android development has really come of age. Android Studio with Gradle at its core is a dash of light after Eclipse. Besides that, there are quite a few open source libraries that we use on a daily basis.
 
 Here is a selection of five of our favorite ones and a list of links where you can find others.
 
