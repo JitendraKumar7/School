@@ -91,10 +91,6 @@ public class DashboardActivity extends BaseActivity
                 Helper.shareApp(activity);
                 break;
 
-            case R.id.nav_logout:
-                launchIntent(SignInActivity.class, true);
-                break;
-
 
         }
         drawer.closeDrawer(GravityCompat.START);
