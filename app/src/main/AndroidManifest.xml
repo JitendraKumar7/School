@@ -16,8 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".SplashActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,7 +28,7 @@
             android:label="@string/title_activity_dashboard" />
         <activity
             android:name=".SignInActivity"
-            android:label="@string/title_activity_sign_in"/>
+            android:label="@string/title_activity_sign_in" />
         <activity
             android:name=".SignUpActivity"
             android:label="@string/title_activity_sign_up" />
@@ -62,7 +61,9 @@
 
         <activity
             android:name=".nav.MapsActivity"
-            android:label="@string/label_our_location"/>
-        </application>
+            android:label="@string/label_our_location" />
+        <activity android:name=".nav.ContactActivity"
+            android:label="Contact"/>
+    </application>
 
 </manifest>

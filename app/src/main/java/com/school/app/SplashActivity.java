@@ -15,10 +15,9 @@ public class SplashActivity extends BaseActivity {
 
         handler.postDelayed(new Runnable() {
             @Override
-                public void run() {
-
-        launchIntent(DashboardActivity.class, true);
-                }
-            },3000);
+            public void run() {
+                launchIntent(DashboardActivity.class, true);
+            }
+        }, 6000);
     }
 }

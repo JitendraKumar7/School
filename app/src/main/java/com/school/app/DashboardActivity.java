@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import com.school.app.base.BaseActivity;
 import com.school.app.nav.AboutActivity;
 import com.school.app.nav.MapsActivity;
+import com.school.app.nav.ContactActivity;
 import com.school.app.nav.PhotosGallaryActivity;
 import com.school.app.nav.PrincipleMessageActivity;
 import com.school.app.utility.Helper;
@@ -81,7 +82,7 @@ public class DashboardActivity extends BaseActivity
                 break;
 
             case R.id.nav_contact:
-                showToast("Coming Soon...");
+                launchIntent(ContactActivity.class, false);
                 break;
 
             case R.id.nav_share:
