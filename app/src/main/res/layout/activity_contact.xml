@@ -118,7 +118,6 @@
                 style="@style/TextAppearance"
                 android:layout_marginBottom="0dp"
                 android:layout_marginTop="0dp"
-                android:paddingBottom="0dp"
                 android:paddingLeft="0dp"
                 android:paddingTop="0dp"
                 android:text="queries@anaya.ac.in"
@@ -128,7 +127,6 @@
                 style="@style/TextAppearance"
                 android:layout_width="@dimen/_160sdp"
                 android:layout_marginBottom="@dimen/_6sdp"
-                android:layout_marginTop="@dimen/_6sdp"
                 android:background="@android:color/holo_red_light"
                 android:text="Admission Queries"
                 android:textColor="@color/colorWhite"
@@ -141,8 +139,7 @@
                 android:layout_marginTop="0dp"
                 android:paddingBottom="0dp"
                 android:paddingLeft="0dp"
-                android:paddingTop="0dp"
-                android:text="+91-96345277xx"
+                android:text="+91-7532885596"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold" />
 
@@ -152,20 +149,19 @@
                 android:layout_marginTop="0dp"
                 android:paddingBottom="0dp"
                 android:paddingLeft="0dp"
-                android:text="+91-96345277xx"
+                android:paddingTop="@dimen/_6sdp"
+                android:text="+91-8178852826"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold" />
 
             <TextView
                 style="@style/TextAppearance"
                 android:layout_width="@dimen/_120sdp"
-                android:layout_marginBottom="@dimen/_6sdp"
+                android:layout_marginBottom="0dp"
                 android:layout_marginTop="@dimen/_6sdp"
-                android:background="#ccc"
-                android:gravity="center"
                 android:paddingLeft="0dp"
+                android:paddingBottom="0dp"
                 android:text="Time To Call"
-                android:textColor="@color/colorWhite"
                 android:textSize="@dimen/_15ssp"
                 android:textStyle="bold" />
 
@@ -181,9 +177,7 @@
 
             <TextView
                 style="@style/TextAppearance"
-                android:layout_marginBottom="0dp"
                 android:layout_marginTop="0dp"
-                android:paddingBottom="0dp"
                 android:paddingLeft="0dp"
                 android:paddingTop="0dp"
                 android:text="Sunday: 10am-4pm"
