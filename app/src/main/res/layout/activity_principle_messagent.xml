@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     android:orientation="vertical"
     tools:context=".nav.PrincipleMessageActivity">
 
@@ -15,7 +16,7 @@
         android:layout_gravity="center"
         android:contentDescription="@string/app_name"
         android:scaleType="fitXY"
-        android:src="@drawable/ic_launcher_web" />
+        android:src="@drawable/principal_image" />
 
     <TextView
         style="@style/TextAppearance"
