@@ -33,29 +33,30 @@
                     android:textStyle="bold" />
 
                 <ImageView
+                    android:id="@+id/welcome"
+                    android:minHeight="@dimen/_100sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/welcome" />
+                    android:scaleType="fitXY" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/welcome_1"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/_120sdp"
                         android:layout_weight="1"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/welcome_1" />
+                        android:scaleType="fitXY" />
 
 
                     <ImageView
+                        android:id="@+id/welcome_2"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/_120sdp"
                         android:layout_weight="1"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/welcome_2" />
+                        android:scaleType="fitXY" />
 
 
                 </LinearLayout>
@@ -76,29 +77,29 @@
                     android:textColor="@color/colorWhite" />
 
                 <ImageView
+                    android:id="@+id/study1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/study1" />
+                    android:scaleType="fitXY" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/study2"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/_120sdp"
                         android:layout_weight="1"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/study2" />
+                        android:scaleType="fitXY" />
 
 
                     <ImageView
+                        android:id="@+id/study3"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/_120sdp"
                         android:layout_weight="1"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/study3" />
+                        android:scaleType="fitXY" />
 
 
                 </LinearLayout>
@@ -119,29 +120,29 @@
                     android:textColor="@color/colorWhite" />
 
                 <ImageView
+                    android:id="@+id/study4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/study4" />
+                    android:scaleType="fitXY" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/study5"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/_120sdp"
                         android:layout_weight="1"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/study5" />
+                        android:scaleType="fitXY" />
 
 
                     <ImageView
+                        android:id="@+id/study6"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/_120sdp"
                         android:layout_weight="1"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/study6" />
+                        android:scaleType="fitXY" />
 
 
                 </LinearLayout>
@@ -162,29 +163,29 @@
                     android:textColor="@color/colorWhite" />
 
                 <ImageView
+                    android:id="@+id/computer_lab_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/computer_lab_1" />
+                    android:scaleType="fitXY" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/computer_lab_2"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/_120sdp"
                         android:layout_weight="1"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/computer_lab_2" />
+                        android:scaleType="fitXY" />
 
 
                     <ImageView
+                        android:id="@+id/computer_lab_3"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/_120sdp"
                         android:layout_weight="1"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/computer_lab_3" />
+                        android:scaleType="fitXY" />
 
 
                 </LinearLayout>
@@ -205,21 +206,21 @@
                     android:textColor="@color/colorWhite" />
 
                 <ImageView
+                    android:id="@+id/computer_lab_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/computer_lab_4" />
+                    android:scaleType="fitXY" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/computer_lab_5"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/_120sdp"
                         android:layout_weight="1"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/computer_lab_5" />
+                        android:scaleType="fitXY"/>
 
 
                     <ImageView
@@ -247,29 +248,29 @@
                     android:textColor="@color/colorWhite" />
 
                 <ImageView
+                    android:id="@+id/fun_games_7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/fun_games_7" />
+                    android:scaleType="fitXY" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/fun_games_8"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/_120sdp"
                         android:layout_weight="1"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/fun_games_8" />
+                        android:scaleType="fitXY" />
 
 
                     <ImageView
+                        android:id="@+id/fun_games_9"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/_120sdp"
                         android:layout_weight="1"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/fun_games_9" />
+                        android:scaleType="fitXY" />
 
 
                 </LinearLayout>
@@ -290,29 +291,29 @@
                     android:textColor="@color/colorWhite" />
 
                 <ImageView
+                    android:id="@+id/fun_games_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/fun_games_1" />
+                    android:scaleType="fitXY" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/fun_games_2"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/_120sdp"
                         android:layout_weight="1"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/fun_games_2" />
+                        android:scaleType="fitXY" />
 
 
                     <ImageView
+                        android:id="@+id/fun_games_3"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/_120sdp"
                         android:layout_weight="1"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/fun_games_3" />
+                        android:scaleType="fitXY"/>
 
 
                 </LinearLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".nav.AboutActivity">
+    tools:context=".nav.PhotosGallaryActivity">
 
     <include layout="@layout/toolbar" />
 
@@ -14,19 +14,19 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/welcome"
             android:layout_width="0dp"
             android:layout_height="@dimen/_120sdp"
             android:layout_weight="1"
-            android:scaleType="fitXY"
-            android:src="@drawable/welcome" />
+            android:scaleType="fitXY" />
 
 
         <ImageView
+            android:id="@+id/study2"
             android:layout_width="0dp"
             android:layout_height="@dimen/_120sdp"
             android:layout_weight="1"
-            android:scaleType="fitXY"
-            android:src="@drawable/study2" />
+            android:scaleType="fitXY" />
 
 
     </LinearLayout>
@@ -36,22 +36,21 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/fun_games_3"
             android:layout_width="0dp"
             android:layout_height="@dimen/_120sdp"
             android:layout_weight="1"
-            android:scaleType="fitXY"
-            android:src="@drawable/fun_games_3" />
+            android:scaleType="fitXY" />
 
 
         <ImageView
+            android:id="@+id/fun_games_2"
             android:layout_width="0dp"
             android:layout_height="@dimen/_120sdp"
             android:layout_weight="1"
-            android:scaleType="fitXY"
-            android:src="@drawable/fun_games_2" />
+            android:scaleType="fitXY" />
 
 
     </LinearLayout>
-
 
 </LinearLayout>

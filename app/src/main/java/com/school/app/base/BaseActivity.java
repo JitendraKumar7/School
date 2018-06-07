@@ -19,6 +19,8 @@ public abstract class BaseActivity extends AppCompatActivity implements AppConst
     protected Handler handler = new Handler();
     protected Activity activity = BaseActivity.this;
 
+    final public String BASE = "https://anayatech.000webhostapp.com/images/";
+
     protected void showToast(String message) {
         if (toast == null) toast = Toast.makeText(activity, message, Toast.LENGTH_SHORT);
         toast.setGravity(CENTER, 0, 0);
