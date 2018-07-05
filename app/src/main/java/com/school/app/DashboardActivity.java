@@ -1,6 +1,7 @@
 package com.school.app;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -117,89 +118,89 @@ public class DashboardActivity extends BaseActivity
         nav_view.setNavigationItemSelectedListener(this);
 
         Picasso.get().load(BASE + "welcome.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(welcome);
 
         Picasso.get().load(BASE + "welcome_1.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(welcome_1);
 
         Picasso.get().load(BASE + "welcome_2.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(welcome_2);
 
         Picasso.get().load(BASE + "study1.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(study1);
 
         Picasso.get().load(BASE + "study2.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(study2);
 
         Picasso.get().load(BASE + "study3.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(study3);
 
         Picasso.get().load(BASE + "study4.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(study4);
 
         Picasso.get().load(BASE + "study5.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(study5);
 
         Picasso.get().load(BASE + "study6.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(study6);
 
         Picasso.get().load(BASE + "computer_lab_1.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(computer_lab_1);
 
         Picasso.get().load(BASE + "computer_lab_2.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(computer_lab_2);
 
         Picasso.get().load(BASE + "computer_lab_3.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(computer_lab_3);
 
         Picasso.get().load(BASE + "computer_lab_4.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(computer_lab_4);
 
         Picasso.get().load(BASE + "computer_lab_5.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(computer_lab_5);
 
         Picasso.get().load(BASE + "fun_games_1.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(fun_games_1);
 
         Picasso.get().load(BASE + "fun_games_2.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(fun_games_2);
 
         Picasso.get().load(BASE + "fun_games_3.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(fun_games_3);
 
         Picasso.get().load(BASE + "fun_games_7.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(fun_games_7);
 
         Picasso.get().load(BASE + "fun_games_8.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(fun_games_8);
 
         Picasso.get().load(BASE + "fun_games_9.png")
-                .placeholder(R.drawable.ic_launcher_web)
+                
                 .into(fun_games_9);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 

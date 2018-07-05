@@ -10,25 +10,42 @@
 
     <include layout="@layout/toolbar" />
 
-    <ImageView
-        android:layout_width="@dimen/_120sdp"
-        android:layout_height="@dimen/_120sdp"
-        android:layout_gravity="center"
-        android:contentDescription="@string/app_name"
-        android:scaleType="fitXY"
-        android:src="@drawable/principal_image" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        style="@style/TextAppearance"
-        android:layout_margin="0dp"
-        android:text="In the last year or so, Android development has really come of age. Android Studio with Gradle at its core is a dash of light after Eclipse. Besides that, there are quite a few open source libraries that we use on a daily basis.
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-Here is a selection of five of our favorite ones and a list of links where you can find others.
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/principal_image" />
 
-In the last year or so, Android development has really come of age. Android Studio with Gradle at its core is a dash of light after Eclipse. Besides that, there are quite a few open source libraries that we use on a daily basis.
+            <TextView
+                style="@style/TextAppearance"
+                android:layout_margin="0dp"
+                android:text="
+        The year 2011 marked the beginning of an era as the gates of Global Indian International School opened to cater to the education needs of PCMC. This institution was created with an objective of providing an outstanding 360 degree education in character building, leadership, extra and co-curricular activities along with academics along with a very strong, dedicated and capable team of educators who became the driving force in the growth of the School.
 
-Here is a selection of five of our favorite ones and a list of links where you can find others.
 
+
+As we are ready to set our foot in the 7th year of functioning, it gives me immense pleasure to share with you that Global Indian International School, has been ranked as the 2nd best School of the city by Education World India School Rankings 2017 which is the most coveted awards in the day coed category. The School was judged on 14 parameters of educational excellence.
+
+
+The other highlights in the repertoire of achievements in this year have been the awards conferred upon by Education Today ranking us No 3 in Pune and India Today, which bestowed upon us the honor of Excellence in CBSE Education, Pune.
+
+
+The journey that is laced beautifully with triumphs would not have been possible without you. I thank you parents, in all humility for your generosity in time, talents and resources. Thank you for constantly supporting us in every step we take and reposing your confidence in us. I speak for the entire team of GIIS Chinchwad in saying we would not accomplish what we do without your help. I deeply cherish the revered bond we have formed with you over the years. Thank you for entrusting us with the future of your children, for entrusting us to mold and sculpt their minds, enrich their souls and ignite the spark of lifelong learning in them.
 " />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
